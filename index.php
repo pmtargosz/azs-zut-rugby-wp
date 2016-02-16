@@ -7,23 +7,60 @@ get_header();
 ?>
 
 <section class="container slider">
+
     <div class="slider-frame-top">
-        <div class="slider-frame-title table"><div class="table-cell"><h2 class="slider-title">Wygrana w Gnieźnie</h2></div></div>
+        <div class="slider-frame-title table"></div>
     </div>
-        <div class="slider-image" style="background: url(http://localhost/wordpress/wp-content/themes/azs-rugby/img/1.jpg) no-repeat center center; background-size:cover"></div>
-    <p>“Dnia 16 lutekgo 2013 roku w Gnieźnie odbył...”</p>
+        <!-- <div class="slider-image" style="background: url(http://localhost/wordpress/wp-content/themes/azs-rugby/img/1.jpg) no-repeat center center; background-size:cover"></div>
+        <p>“Dnia 16 lutekgo 2013 roku w Gnieźnie odbył...”</p>class="slider-title" -->
+
+        <ul class="sliders-content">
+          <li class="slider-content active-slide">
+            <div class="box-title">
+              <h2><span class="slider-title">Wygrana w Gnieźnie ds d sd dfs d</span></h2>
+            </div>
+            <img src="http://localhost/wordpress/wp-content/themes/azs-rugby/img/1.jpg" alt="" />
+            <div class="box-text">
+              <p class="slider-text">“Dnia 16 lutekgo 2013 roku w Gnieźnie odbył...”</p>
+            </div>
+          </li>
+          <li class="slider-content">
+            <div class="box-title">
+              <h2><span class="slider-title">Wygraeźnie ds d sd dfs d</span></h2>
+            </div>
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/01/2.jpg" alt="" />
+            <div class="box-text">
+              <p class="slider-text">“2013 roku w Gnieźnie odbył...”</p>
+            </div>
+          </li>
+          <li class="slider-content">
+            <div class="box-title">
+              <h2><span class="slider-title">Wygrana w Poznainiue</span></h2>
+            </div>
+            <img src="http://localhost/wordpress/wp-content/themes/azs-rugby/img/1.jpg" alt="" />
+            <div class="box-text">
+              <p class="slider-text">“Dnia 16 lutekgku w Gnieźnie odbył...”</p>
+            </div>
+          </li>
+        </ul>
     <div class="slider-frame-bottom">
+
         <div class="slider-dots">
-            <ul>
+            <ul id="dots">
                 <li>&bull;</li>
                 <li>&bull;</li>
                 <li>&bull;</li>
                 <li>&bull;</li>
             </ul>
-    </div>
+        </div>
+
+
         <span class="slider-button">Czytaj artykuł</span>
     </div>
+
 </section>
+
+
 <section class="container quote-container">
     <div class="quote-content">
         <div class="table">

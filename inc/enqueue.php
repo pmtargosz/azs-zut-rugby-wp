@@ -40,6 +40,7 @@ function azsrugby_load_scripts(){
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.6', true);
     wp_enqueue_script('google-map', get_template_directory_uri() . '/js/google_map.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('my-action', get_template_directory_uri() . '/js/action.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('my-slider', get_template_directory_uri() . '/js/slider.js', array('jquery'), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'azsrugby_load_scripts');
