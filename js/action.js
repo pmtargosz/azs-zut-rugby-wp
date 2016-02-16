@@ -15,19 +15,29 @@ $('.mobile-nav-button').on('click', function(e){
 $('#search-button-active').on('click', function(e){
 	e.preventDefault();
        	$('.search-container').fadeIn();
-		//$('#search-button-active').hide();
-       	$('#search-button-active').css('color','#006738');
+       	$('#search-button-active').css('color','transparent');
        	$('#search-button-active').css('cursor','auto');
+        $('.search-input').addClass('animate-search-input');
        	e.stopPropagation();
 	});
+  $('#login-button').on('click', function(e){
+  	e.preventDefault();
+         	$('.login-container').fadeIn();
+         	e.stopPropagation();
+  	});
+    $('#login-exit-button').on('click', function(e){
+
+          $('.login-container').fadeOut();
+
+});
 $(document).on('click', function(e){
 		if( e.target.id != 'searchtext') {
 
        	$('.search-container').fadeOut();
        	$('#search-button-active').fadeIn();
-		//$('#search-button-active').show();
-		$('#search-button-active').css('color','#fff');
+		    $('#search-button-active').css('color','#fff');
        	$('#search-button-active').css('cursor','pointer');
+        $('.search-input').removeClass('animate-search-input');
        	}
 
 

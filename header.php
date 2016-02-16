@@ -104,7 +104,13 @@
                             <div class="table-cell">
                                 <div class="azsrugby-icon">
                                     <span id="search-button-active" class="azsrugby-search"></span>
-                                    <span class="header-nav-title">Login</span>
+                                    <?php
+                                      if ( is_user_logged_in() ) {
+                                          echo '<a href="'. wp_logout_url(home_url()) .'"><span class="header-nav-title">Wyloguj się</span></a>';
+                                      }else{
+                                      ?>
+                                    <span id="login-button" class="header-nav-title"><?php wp_loginout(); ?> </span>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div><!--search login-->
@@ -114,14 +120,22 @@
                     <div class="col-xs-12 search-container">
                         <form method="get"  action="#">
                            <fieldset>
-                                <input type="search" id="searchtext"  name="s" placeholder="Szukaj">
+                                <input type="search" class="search-input animate" id="searchtext"  name="s" placeholder="Szukaj">
                                 <button type="submit" class="search-button azsrugby-icon"><span class="azsrugby-search"></span></button>
                             </fieldset>
                         </form>
                     </div>
                 </div>
                 <div class="row">
-                    <nav class="nav-mobile-menu">
+                    <div class="col-xs-12 login-container">
+                      <span id="login-exit-button" class="azsrugby-icon azsrugby-cross exit-login"> </span>
+                      <div id="login-box">
+                        <?php wp_login_form(); ?>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="col-xs-12 nav-mobile-menu">
                             <?php
                                 wp_nav_menu(array(
                                     'theme_location' => 'mobile_menu',
@@ -129,7 +143,6 @@
                                     'menu_class' => 'mobile-menu'
                                  ));
                             ?>
-                        <!-- <?php wp_login_form(); ?> -->
                     </nav>
                 </div>
             </div><!--.container-->

@@ -17,7 +17,7 @@
 header css (azsrugby-admin)
 */
 .azsrugby-preview,
-.azsrugby-general-form{display: inline-block; float: left;}
+.azsrugby-general-form{display:block;float: left;}
 
 .azsrugby-preview{width: 480px; height: 63px; text-align: center; background-color: #006738; margin-left: 15px; margin-top: 40px;}
 .azsrugby-header{display: inline-block; }
@@ -27,7 +27,7 @@ header css (azsrugby-admin)
  /*
 promotion css
 */
-.azsrugby-promotion-preview{ text-align: center; margin-left: 15px; margin-top: 40px;display: inline-block; float: left; text-align: center;}
+.azsrugby-promotion-preview{margin-left: 15px; margin-top: 40px;display:block; float: left; text-align: center;}
 .promotion-img{height: 250px; margin-left: 5px; margin-right: 5px; display: inline-block;}
 /*achivments*/
 .azsrugby-achiev-preview{position: relative;margin-left: 25px;display: inline-block;}
@@ -46,5 +46,3 @@ promotion css
   /*
 contact form css (azsrugby-theme-contact)
 */
-
-
