@@ -1,0 +1,212 @@
+ /*
+    @package azsrugbytheme
+*/
+@font-face {
+    font-family: 'myfontHeader';
+    src: url('../fonts/Freshman.eot?lybzvh');
+    src: url('../fonts/Freshman.eot?lybzvh#iefix') format('embedded-opentype'),
+        url('../fonts/Freshman.ttf?lybzvh') format('truetype'),
+        url('../fonts/Freshman.woff?lybzvh') format('woff'),
+        url('../fonts/Freshman.svg?lybzvh') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+    FONT ICON
+    -------------------------------------------------------------------------
+*/
+@font-face {
+    font-family: 'azsrugby-icon';
+    src:    url('../fonts/azsrugby-icon.eot?dhwf0p');
+    src:    url('../fonts/azsrugby-icon.eot?dhwf0p#iefix') format('embedded-opentype'),
+        url('../fonts/azsrugby-icon.ttf?dhwf0p') format('truetype'),
+        url('../fonts/azsrugby-icon.woff?dhwf0p') format('woff'),
+        url('../fonts/azsrugby-icon.svg?dhwf0p#azsrugby-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.azsrugby-icon { /* use !important to prevent issues with browser extensions that change fonts */ font-family: 'azsrugby-icon' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}.azsrugby-a1:before { content: "\e900";}.azsrugby-a2:before { content: "\e901";}.azsrugby-like:before { content: "\e902";}.azsrugby-logo-m:before { content: "\e903"; font-size: 60px;}.azsrugby-mm:before { content: "\e904"; font-size: 25px}.azsrugby-home3:before { content: "\e905";}.azsrugby-pencil2:before { content: "\e906";}.azsrugby-images:before { content: "\e907";}.azsrugby-headphones:before { content: "\e908";}.azsrugby-play:before { content: "\e909";}.azsrugby-connection:before { content: "\e90a";}.azsrugby-price-tags:before { content: "\e90b";}.azsrugby-barcode:before { content: "\e90c";}.azsrugby-qrcode:before { content: "\e90d";}.azsrugby-cart:before { content: "\e90e";}.azsrugby-location:before { content: "\e90f";}.azsrugby-bubble:before { content: "\e910"; float: right; font-size: 14px;margin-top: 3px;margin-right: 3px;}.azsrugby-user:before { content: "\e911";}.azsrugby-quotes-right:before { content: "\e912";}.azsrugby-spinner:before { content: "\e913";}.azsrugby-search:before { content: "\e914"; font-size: 25px;}.azsrugby-cog:before { content: "\e915";}.azsrugby-blocked:before { content: "\e916";}.azsrugby-cross:before { content: "\e917";}.azsrugby-checkmark:before { content: "\e918";}.azsrugby-embed2:before { content: "\e919";}.azsrugby-share2:before { content: "\e91a";}.azsrugby-mail2:before { content: "\e91b";}.azsrugby-google-plus:before { content: "\e91c";}.azsrugby-facebook:before { content: "\e91d"; font-size:20px; padding: 5px;}.azsrugby-facebook2:before { content: "\e91e";}.azsrugby-instagram:before { content: "\e91f"; font-size:24px; padding: 5px;}.azsrugby-twitter:before { content: "\e920"; font-size:20px; padding: 5px;}.azsrugby-rss:before { content: "\e921";}.azsrugby-youtube2:before { content: "\e922"; font-size: 22px; padding: 5px;}.azsrugby-vimeo:before { content: "\e923";}
+/*
+    GENERAL
+    -------------------------------------------------------------
+*/
+body{font-family: 'Bree Serif', 'Helvetica Neue', 'Helvetica', Arial, Verdana, serif;}
+.table{display: table; /*width: auto;*/ height: 100%; margin-bottom: 0;}
+.table-cell{display: table-cell; width: 100%; height: 100%; vertical-align: middle;}
+/*
+    HEADER TOP LOGO SOCIAL
+    -------------------------------------------------------------
+*/
+.top{background-color:#006738; color:#fff; padding-left: 0; padding-right: 0; z-index: 99; position: relative;  }
+.top a:visited,
+.top a:link{color:#fff; text-decoration: none;}
+.header-content{height: 63px; padding-left: 0; padding-right: 0;}
+.header-social-container{background-color: #008f4e; width:auto;float: left; }
+.header-social-content{ float: left; padding-top: 8px; padding-bottom: 8px; padding-left: 10px; padding-right: 10px; text-align: center;}
+.header-social-content:first-of-type{border-right: 2px solid rgba(255, 255, 255, 0.1);}
+.header-nav-container{width:auto;height: 63px;padding-left:10px;padding-right:10px;}
+.header-nav-title{font-family: Arial; font-weight: bold;font-size: 15px;padding-left: 10px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; top: -6px; position: relative;}
+.site-title{font-family:myfontHeader; text-transform: uppercase; color: #fff;  font-size: 30px; margin: 0;}
+.site-title-sample{font-family:myfontHeader; margin: 0; position: relative; top:-15px;}
+.header-logo{height: 63px;}
+.header-search-container{width: auto;}
+/*
+    HEADER LOGO
+    -------------------------------------------------------------
+*/
+.main-nav-container{height: 150px;position: relative;z-index: 6; padding: 0;text-align: center;}
+.logo{width: 150px; height:160px; position: absolute;top: 12px;z-index: -1; background-color: #fff;}
+.logo a{width: 120px;display: block;}
+.logo-img{width: 120px;}
+/*SEARCH FIELD*/
+.search-container{width:100%;height: 100%;left: 0; top: 0;position: fixed;background-color: rgba(0,0,0,0.9); z-index: 9999; display: none;}
+input[type=search] { width: 50%;height: 35px;border-radius: 50px;border-color: transparent;padding: 0 10px 0 10px;-webkit-transition: all .5s;-moz-transition: all .5s;
+    transition: all .5s;color: #000;position: absolute;top: 50%;left: 26%;margin-top: -50px;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;}
+.search-button{position: absolute;top: 50%;margin: 0 auto;padding: 12px;border: none;background-color: #000000;border-radius: 50%;overflow: hidden;left: 50%;margin-left: -12px;}
+#search-button-active{cursor: pointer}
+/*
+    HEADER MENU
+    -------------------------------------------------------------
+*/
+.navbar-azsrugby{height: 125px;position: relative;display: inline-block;transform: rotate(-5deg);text-align: center;margin: 0; background-color: #fff}
+.navbar-azsrugby ul {position: relative; top: 60px;}
+.navbar-azsrugby li a{text-transform: uppercase; color: #006738; font-size: 24px; font-weight: bold; padding: 10px; background: none; padding-bottom: 30px; margin-right: -1px;}
+.navbar-azsrugby li a:hover{ background:#006738; color: #fff;}
+.navbar-azsrugby li.current-menu-item a:link,
+.navbar-azsrugby li.current-menu-item a:visited{background:#006738; color: #fff;}
+
+/*MOBILE MENU*/
+.mobile-nav-button{width: 40px;height: 40px;position: absolute; z-index: 9999; bottom: 10px;top: 8px;}
+.mobile-nav-button-icon{width: 30px; height: 4px;background-color: #fff;position: absolute;display: inline-block;top: 50%; bottom: auto;left: 10%;-webkit-transition: background-color 0.3s; */
+    -moz-transition: background-color 0.3s;
+     transition: background-color 0.3s; }
+.mobile-nav-button-icon:after{content: '';height: 100%;width: 100%;top: 8px;position: absolute;background-color: #fff;-webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+    -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+    transition: transform .3s, top .3s, background-color 0s;}
+.mobile-nav-button-icon:before{content: ''; height: 100%; width: 100%; top: -8px;position: absolute;background-color: #fff;-webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+    -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+    transition: transform .3s, top .3s, background-color 0s;}
+.mobile-menu {width: 100%;height: 100%;position: fixed;left: 0;top: 0;background: rgba(0, 0, 0, 0.9); text-align: center; padding: 50px 0;
+    -webkit-backface-visibility: hidden;backface-visibility: hidden;overflow: auto;-webkit-transform: translateY(-100%);-moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);-o-transform: translateY(-100%);transform: translateY(-100%);-webkit-transition-property: -webkit-transform;
+   -moz-transition-property: -moz-transform;transition-property: transform;-webkit-transition-duration: 0.4s;-moz-transition-duration: 0.4s;transition-duration: 0.4s;}
+.mobile-menu li{list-style-type: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; margin: .2em 0;text-transform: uppercase;}
+.mobile-menu li a:hover{background-color: rgba(0, 0, 0, 1);}
+.mobile-menu li a{display: inline-block; padding: .2em 1em;font-size: 2.5rem;-webkit-transition: background 0.2s;-moz-transition: background 0.2s;
+    transition: background 0.2s;}
+.is-visible{-webkit-transform: translateY(0);-moz-transform: translateY(0);-ms-transform: translateY(0);-o-transform: translateY(0);transform: translateY(0);}
+.is-clicked{background-color: rgba(255, 255, 255, 0);}
+.is-clicked:before{ top: 0;-webkit-transform: rotate(135deg);-moz-transform: rotate(135deg);-ms-transform: rotate(135deg);-o-transform: rotate(135deg);transform: rotate(135deg);}
+.is-clicked:after{ top: 0;-webkit-transform: rotate(225deg);-moz-transform: rotate(225deg);-ms-transform: rotate(225deg);-o-transform: rotate(225deg);transform: rotate(225deg);}
+/*
+    SLIDER
+    -------------------------------------------------------------
+*/
+.slider{position: relative; height: 540px;padding: 0; margin-top: -84px; overflow: hidden;}
+.slider p{width: 32%; height:10%;display: inline-block;position: absolute;overflow: hidden;float: right;right: 35px;top: 458px; color: #fff; font-size: 18px; margin-bottom: 0;z-index: 1;transform: rotate(-5deg);}
+.slider-frame-top{width: 105%;height: 14px; background-color: #37465d; transform: rotate(-5deg); position: relative;z-index: 6; top: 50px;}
+.slider-frame-title{width: 30%; height: 65px; background-color: #37465d; position: relative;left: -10px;text-align: center;}
+.slider-frame-bottom{width: 105%;height: 110px; background-color: #37465d; position: relative; top: -70px; transform: rotate(-5deg);}
+.slider-title{position: relative; margin: 0;display: inline-block;color: #fff; text-transform: uppercase;font-size: 24px;}
+.slider-button{color: #fff;font-size: 16px;position: absolute;border: 2px dashed #fff;border-radius: 8px;right: 70px;top: 55px;padding-left: 5px;transform: rotate(5deg);padding-right: 5px;padding-bottom: 2px;text-transform: uppercase;cursor: pointer;}
+.slider-image{height: 100%;background-size: cover; background-repeat: no-repeat; position: relative; background-position: center center;}
+.slider-dots{position: relative; text-align:center;transform: rotate(5deg);}
+.slider-dots ul {list-style: none; position: relative;margin: 0;right: 28px; padding: 5px;display: inline-block;top: 32px;border-radius: 20%;background-color: #eee;}
+.slider-dots ul li{float: left;font-size: 50px;display: inline;position: relative;top: -30px; color:#37465d; cursor: pointer;}
+.slider-dots ul li:hover{color:#006738;}
+/*
+    QUOTE
+    -------------------------------------------------------------
+*/
+.quote-container{background-color:#eee;position: relative;text-align: center;}
+.quote-content{height: 125px; position: relative; z-index: 2; background-color: #eee; color: #37465d;}
+.quote-container-shadow{position:absolute; z-index:1; -webkit-box-shadow:0 0 40px rgba(0,0,0,0.6);box-shadow:0 0 40px rgba(0,0,0,0.6);bottom:5px;left:10%;right:10%;width:80%;height:50%;-moz-border-radius:100%;border-radius:100%;}
+.quote-content h2{font-size: 24px;}
+.quote-content p{font-size: 18px;}
+/*
+    MAIN CATEGORY POSTS
+    -------------------------------------------------------------
+*/
+.main-container{position: relative;background-color: #eee;text-align: center;padding: 0;}
+.categorie-container{position: relative;margin-top: 50px;text-align: center; margin-bottom: 40px;}
+.categorie-container a{text-decoration: none;padding-left: 5px;padding-right: 5px;font-size: 12px;border-left: 2px solid rgba(0, 0, 0, 0.2);color: rgba(0, 0, 0, 0.6);text-transform: uppercase;}
+.categorie-container a:first-of-type{border-left: none;}
+.posts-container{text-align: center;display: inline-block; padding-bottom: 35px;}
+.standart-post{display: inline-block; max-width: 305px; vertical-align: top;min-width: 305px;text-align: left;height: 280px;margin: 5px; background-color: #fff; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.entry-header{width: 100%;height: 165px;display: block;/* overflow: hidden; */}
+.entry-header img {object-fit: cover; width: 100%; max-height: 165px;}
+.entry-content{position: relative;padding-left: 15px;padding-right: 15px;margin-top: 10px;}
+.entry-title{font-size: 18px;margin-top: 0;margin-bottom: 0;max-height: 48px;overflow: hidden;padding-top: 10px; padding-bottom: 10px;}
+.entry-title a{color:#006738;text-decoration: none;}
+.entry-footer{padding-left: 15px;padding-right: 15px;}
+.posted-coment{font-size: 14px; float: right;}
+.posted-cat a{color:#37465d; text-decoration: none;}
+.navigation{padding-bottom: 30px;}
+.navigation a {border: 3px solid rgba(0, 0, 0, 0.1);;border-radius: 12px;padding: 6px;background-color: #fff; text-decoration: none; text-transform: uppercase; color: rgba(0, 0, 0, 0.8);}
+/*
+    PROMOTION
+    -------------------------------------------------------------
+*/
+.promotion-container{position: relative;background-color: #37465d;padding: 0;text-align: center; box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.4); padding-bottom: 25px;}
+.promotion-movie{ width:  560px;position: relative;display: inline-block;padding: 10px;margin-top: 25px;}
+.promotion-content{position: relative;display: inline-block;padding: 10px;vertical-align: top;margin-top: 25px; }
+.promotion-content img{width: 125px;height: 100%;}
+.promotion-content h2{font-size: 24px;text-transform: uppercase;color: #8a8a8a; margin-top: 10px;}
+.promotion-content a {border: 3px solid rgba(0, 0, 0, 0.1);;border-radius: 12px;padding: 6px;background-color: #fff; text-decoration: none; text-transform: uppercase; color: rgba(0, 0, 0, 0.8);}
+.promotion-button{margin-top: 30px;margin-bottom: 30px;}
+/*
+    ACHIVMENTS
+    -------------------------------------------------------------
+*/
+.achivments-container{position: relative;background-color: #fff;padding: 0;text-align: center; z-index: -2;margin-bottom: 25px;}
+.achivments-logo{margin-top: 25px;}
+.achivments-logo img{width: 65px;}
+.achivments-title h2{font-size: 24px;text-transform: uppercase;color: #8a8a8a; margin-top: 10px;}
+.achivments-contents{text-align: center;    margin-top: 35px;}
+.achivments-content{max-width: 155px; height: 240px; display: inline-block;position: relative;text-align: center; vertical-align: top;padding: 15px;padding-left: 5px; padding-right: 5px; margin-top: 20px;margin-bottom: 20px; border-left: 1px solid rgba(0, 0, 0, 0.1);}
+.achivments-content:first-of-type{border-left: none;}
+.achivments-content img{width: 60px;}
+.achivments-content p{font-size: 12px;font-family: Arial; color: #8a8a8a;}
+.achivments-numb{position: absolute;bottom: 0; left:50%;display: inline-block; *display:inline;  vertical-align: top;text-align: center;zoom:1;font-size: 24px; color:#8a8a8a; }
+/*
+    SUPPORT
+    -------------------------------------------------------------
+*/
+.support-container{background-color: #eee;text-align: center; padding: 0;}
+.support-title{display: inline-block;}
+.support-title h2{font-size: 24px; color:#8a8a8a; text-transform: uppercase;}
+.support-content{text-align: center;    margin-bottom: 25px;}
+.support-item{display: inline-block; padding: 30px;}
+.support-item img{max-height: 100px;filter: grayscale(1); -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -o-filter: grayscale(1);-ms-filter: grayscale(1); -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;}
+.support-item img:hover{ filter: grayscale(0); -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -o-filter: grayscale(0); -ms-filter: grayscale(0);-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);}
+/*
+    FOOTER
+    -------------------------------------------------------------
+*/
+.footer-container{position: relative; background-color: #171717; color: #fff; text-align: center;padding: 0;}
+.footer-adress{margin-bottom: 20px;}
+.footer-adress p{font-size: 20px; text-transform: uppercase; margin-bottom: 0;}
+.footer-adress a{color: #fff;}
+.footer-logo{display: block;position: relative;padding: 20px; padding-bottom: 10px; }
+.footer-logo img{width: 50px;}
+.podpis{margin-bottom: 10px;}
+.podpis p{margin-bottom: 0; font-size: 12px;}
+#footer-mail{font-size: 16px;text-transform: none;}
+#map-container{height:250px;}
+
+
+@media (max-width: 578px){
+
+    .promotion-movie{width: auto;display: block; }
+
+}
