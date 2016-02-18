@@ -71,6 +71,21 @@ function azsrugby_custom_settings(){
     add_settings_field('quot-title', 'Cytat: ', 'q_title', 'pmtargosz_azsrugby_quot', 'azsrugby-quot');
     add_settings_field('quote-author', 'Autor ', 'q_author', 'pmtargosz_azsrugby_quot', 'azsrugby-quot');
 
+    //Slider
+    register_setting('azsrugby-theme-slider', 'slider_numbers_var');
+    register_setting('azsrugby-theme-slider', 'slider_title_var');
+    register_setting('azsrugby-theme-slider', 'slider_img_var');
+    register_setting('azsrugby-theme-slider', 'slider_text_var');
+    register_setting('azsrugby-theme-slider', 'slider_link_var');
+
+    add_settings_section('azsrugby-slider-section', 'Dodawanie treści do slajdera', 'azsrugby_slider_section', 'pmtargosz_azsrugby_slider');
+
+    add_settings_field('slider-numbers', 'Liczba elementow : ', 'slider_numbers', 'pmtargosz_azsrugby_slider', 'azsrugby-slider-section');
+    add_settings_field('slider-title', 'Podaj tytuł: ', 'slider_title', 'pmtargosz_azsrugby_slider', 'azsrugby-slider-section');
+    add_settings_field('slider-img', 'Dodaj zdjęcie do slajdera: ', 'slider_img', 'pmtargosz_azsrugby_slider', 'azsrugby-slider-section');
+    add_settings_field('slider-text', 'Dodaj opis :', 'slider_text', 'pmtargosz_azsrugby_slider', 'azsrugby-slider-section');
+    add_settings_field('slider-link', 'Dodaj odnośnik do strony :', 'slider_link', 'pmtargosz_azsrugby_slider', 'azsrugby-slider-section');
+
     //Promotion Options
     register_setting('azsrugby-theme-promotion', 'promotion_on_off');
     register_setting('azsrugby-theme-promotion', 'promotion_movie_link');
@@ -96,7 +111,6 @@ function azsrugby_custom_settings(){
     register_setting('azsrugby-theme-achievements', 'achievements_img');
     register_setting('azsrugby-theme-achievements', 'achievements_img_title');
     register_setting('azsrugby-theme-achievements', 'achievements_img_numb');
-    register_setting( $option_group, $option_name, $sanitize_callback );
 
     add_settings_section('azsrugby-achievements-section', 'Ustawienia sekcji "Osiągnięcia"', 'azsrugby_achievements_section', 'pmtargosz_azsrugby_achievements');
 
@@ -138,6 +152,9 @@ function azsrugby_support_section(){
 }
 function azsrugby_quot_section(){
     echo 'Ustaw cytat: ';
+}
+function azsrugby_slider_section(){
+  echo 'Dodawanie treści do Slajdera ';
 }
 function azsrugby_achievements_section(){
     echo 'Opcje do personalizacji: ';
@@ -205,6 +222,74 @@ function support_img(){
     }
 
 }
+//
+//
+//SLIDER functions
+//
+//
+function slider_numbers(){
+  $number = get_option('slider_numbers_var' );
+  echo '<label><input type="text" style="width: 40px;text-align:center;" name="slider_numbers_var" value="'.$number.'" placeholder="2" /><p class="description">Wpisz ilość elementow w slajderze</p></label>';
+}
+function slider_title(){
+    $titles = (array)get_option('slider_title_var' );
+    $str_number = get_option('slider_numbers_var' );
+    $number = (int)$str_number;
+
+    for($i=0;$i<$number;$i++){
+        $title = esc_attr( $titles[$i] );
+        $v = $i + 1;
+
+        echo "<input type='text'name='slider_title_var[$i]' value='$title' placeholder='Wygrana...' /><p class='description'>Wpisz tytuł</p>";
+    }
+
+}
+function slider_img(){
+
+  $imgs = (array) get_option('slider_img_var' );
+  $str_number = get_option('slider_numbers_var' );
+  $number = (int)$str_number;
+
+    for($i=0;$i<$number;$i++){
+        $img = esc_attr( $imgs[$i] );
+        $v = $i + 1;
+        if(empty ($img)){
+        echo "<input type='button' class='button button-secondary' value='Upload img' id='upload-button-slider-img$i' /><input type='hidden' id='slider-img$i' name='slider_img_var[$i]' value=''  /><p style='margin-bottom:85px;' class='description'/>Dodaj grafikę - $v</p>";
+
+    }else{
+        echo "<input type='button' class='button button-secondary' value='Zmień grafikę' id='upload-button-slider-img$i' /><input type='hidden' id='slider-img$i' name='slider_img_var[$i]' value='$img'  /> <input type='button' class='button button-secondary' value='Usuń grafikę'' id='remove-slider-img$i' /> <p style='margin-bottom:85px;' class='description'>Zmień lub usuń grafikę - $v</p>";
+        }
+
+    }
+}
+function slider_text(){
+    $texts = (array)get_option('slider_text_var' );
+    $str_number = get_option('slider_numbers_var' );
+    $number = (int)$str_number;
+
+    for($i=0;$i<$number;$i++){
+        $text = esc_attr( $texts[$i] );
+        $v = $i + 1;
+
+        echo "<input type='text'name='slider_text_var[$i]' value='$text' placeholder='Wygrana AZS ZUT Rugby Szczecin...' /><p class='description'>Wpisz krotki opis</p>";
+    }
+
+}
+function slider_link(){
+    $links = (array)get_option('slider_link_var' );
+    $str_number = get_option('slider_numbers_var' );
+    $number = (int)$str_number;
+
+    for($i=0;$i<$number;$i++){
+        $link = esc_attr( $links[$i] );
+        $v = $i + 1;
+
+        echo "<input type='text'name='slider_link_var[$i]' value='$link' placeholder='http://www.......' /><p class='description'>Wpisz link do strony</p>";
+    }
+
+}
+
+
 //
 //
 //ACHIVMENTS functions
@@ -444,4 +529,3 @@ function azsrugby_theme_settings_theme(){
 function azsrugby_theme_settings_contact(){
     require_once( get_template_directory() . '/inc/tamplates/azsrugby-theme-contact.php');
 }
-

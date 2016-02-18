@@ -41,6 +41,65 @@ jQuery(document).ready( function($){
         return;
 
     });
+///
+///
+///SLIDER
+///
+///
+var mediaUploader = [];
+
+    $("input").on('click',function(e) {
+
+        var id = this.id;
+        var str_id = id.slice(0,24);
+        var numer_id = id.slice(24,26);
+        var n = Number(numer_id);
+
+        if(str_id == 'upload-button-slider-img' ){
+            e.preventDefault();
+                if( mediaUploader[n] ){
+                    mediaUploader[n].open();
+                    return;
+                }
+
+            mediaUploader[n] = wp.media.frames.file_frame = wp.media({
+                title: 'Wybierz grafike promocyjną',
+                button: {
+                    text: 'Wybierz grafikę'
+                },
+                multiple: false
+            });
+
+            mediaUploader[n].on('select', function(){
+                attachment = mediaUploader[n].state().get('selection').first().toJSON();
+                $('#slider-img'+numer_id).val(attachment.url);
+                /*$('#logo-picture-preview').css('background-image', 'url(' + attachment.url + ')');*/
+                $('#slider-img-preview'+numer_id).attr('src', attachment.url);
+            });
+
+        mediaUploader[n].open();
+
+    }
+
+    });
+
+    $("input").on('click', function(e){
+
+        var id = this.id;
+        var str_id = id.slice(0,17);
+        var numer_id = id.slice(17,19);
+
+        if(str_id == 'remove-slider-img' ){
+            e.preventDefault();
+            var answer = confirm("Jesteś pewny, że chcesz usunąć grafikę");
+                if(answer == true){
+                    $('#slider-img'+numer_id).val('');
+                    $('.azsrugby-general-form').submit();
+                }else{
+                        }
+        return;
+        }
+    });
 
 
     //promotion
@@ -168,10 +227,10 @@ var mediaUploader = [];
     $("input").on('click', function(e){
 
         var id = this.id;
-        var str_id = id.slice(0,18);
-        var numer_id = id.slice(18,20);
+        var str_id = id.slice(0,23);
+        var numer_id = id.slice(23,25);
 
-        if(str_id == 'remove-support-img' ){
+        if(str_id == 'remove-achievements-img' ){
             e.preventDefault();
             var answer = confirm("Jesteś pewny, że chcesz usunąć grafikę");
                 if(answer == true){

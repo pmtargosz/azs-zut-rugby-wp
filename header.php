@@ -147,19 +147,4 @@
                 </div>
             </div><!--.container-->
         </div><!--.container-fluid-->
-        <div class="container main-nav-container">
-
-            <div class="logo">
-                <a href="<?php echo home_url();?>" title="Strona Główna"><img class="logo-img" src="<?php header_image();?>"/></a>
-            </div><!--.logo-->
-            <nav class="navbar navbar-deafult navbar-azsrugby">
-                    <?php
-                        wp_nav_menu(array(
-                            'theme_location' => 'header_menu',
-                            'container' => false,
-                            'menu_class' => 'nav navbar-nav'
-                        ));
-                    ?>
-            </nav>
-        </div><!--.main-nav-container-->
     </header>
