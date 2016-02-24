@@ -9,6 +9,7 @@ get_header();
     <div class="logo">
         <a href="<?php echo home_url();?>" title="Strona Główna"><img class="logo-img" src="<?php header_image();?>"/></a>
     </div><!--.logo-->
+    <div class="makeup"></div>
     <nav class="navbar navbar-deafult navbar-azsrugby">
             <?php
                 wp_nav_menu(array(
@@ -43,7 +44,7 @@ get_header();
                 );
                 $categories = get_categories( $args );
                 foreach ( $categories as $category ) {
-                    echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';}?>
+                    echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . ' </a> ';}?>
             </div>
     <div class="posts-container">
             <?php

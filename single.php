@@ -2,13 +2,17 @@
 
 get_header();
  ?>
-<section class="container single-container">
+ <?php   get_template_part('template-parts/main-menu'); ?>
+<section class="container page-container">
 
 
-    <article class="post">
+    <article class="post-blog">
+      <div class="post-info">
+
+
         <h2><?php the_title(); ?></a></h2>
 
-        <p class="post-info"><?php the_time('j.m.Y G:i'); ?> autor: <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a>
+        <p><?php the_time('j.m.Y G:i'); ?>:
         <?php
             $categories = get_the_category();
             $separator = ", ";
@@ -27,7 +31,15 @@ get_header();
             ?>
 
         </p>
-        <p><?php the_content(); ?></p>
+          </div>
+          <?php if (have_posts()) : while (have_posts()) : the_post();?>
+            <div class="single-post-img">
+              <?php the_post_thumbnail(); ?>
+            </div>
+            <div class="page-content">
+              <?php the_content(); ?>
+            </div>
+       <?php endwhile; endif; ?>
     </article>
 </section>
 

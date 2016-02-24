@@ -43,5 +43,44 @@ $(document).on('click', function(e){
 
 	});
 
+  var hours = 24; // Reset when storage is more than 24hours
+  var now = new Date().getTime();
+  var setupTime = localStorage.getItem('setupTime');
+  if (setupTime == null) {
+      localStorage.setItem('setupTime', now);
+  } else {
+      if(now-setupTime > hours*60*60*1000) {
+          localStorage.clear();
+          localStorage.setItem('setupTime', now);
+      }
+  }
+  if(localStorage.getItem('setcokie') != 'shown'){
+			jQuery('.cookie').css({
+				'display':'block'
+			});
+			localStorage.setItem('setcokie','shown');
+		}
+
+    $('#cookie-ok').on('click', function(){
+             $('.cookie').fadeOut();
+     });
+
+
+
+
+
+
+    $('.mm-szukaj a').on('click', function(e){
+    	e.preventDefault();
+           	$('.search-container').fadeIn();
+            $('.search-input').addClass('animate-search-input');
+           	e.stopPropagation();
+    	});
+
+    if ($('#wpadminbar').is(':visible')) {
+        $('.top').css('top', '32px');
+}else{
+  $('.top').css('top', '0');
+}
 
 });

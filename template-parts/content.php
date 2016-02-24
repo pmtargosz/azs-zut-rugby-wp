@@ -10,7 +10,7 @@
         <?php if(has_post_thumbnail()){?>
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
        <?php }else{ ?>
-           <a href="<?php the_permalink(); ?>"><img src="http://localhost/wordpress/wp-content/themes/azs-rugby/img/post_img_ex.jpg"/></a>
+           <a href="<?php the_permalink(); ?>"><img src="http://azsrugby.zut.edu.pl/wp-content/themes/azs-rugby/img/post_img_ex.jpg"/></a>
         <?php } ?>
     </header>
     <div class="entry-content">
@@ -18,10 +18,8 @@
         <div class="entry-excerpt">
         <?php the_excerpt(); ?>
         </div>
-    </div>  
+    </div>
     <footer class="entry-footer">
         <?php echo azsrugby_posted_footer(); ?>
     </footer>
 </article>
-        
-       

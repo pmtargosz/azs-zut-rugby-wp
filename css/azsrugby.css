@@ -25,7 +25,7 @@
     font-weight: normal;
     font-style: normal;
 }
-.azsrugby-icon {font-family: 'azsrugby-icon' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}.azsrugby-a1:before { content: "\e900";}.azsrugby-a2:before { content: "\e901";}.azsrugby-like:before { content: "\e902";}.azsrugby-logo-m:before { content: "\e903"; font-size: 60px;}.azsrugby-mm:before { content: "\e904"; font-size: 25px}.azsrugby-home3:before { content: "\e905";}.azsrugby-pencil2:before { content: "\e906";}.azsrugby-images:before { content: "\e907";}.azsrugby-headphones:before { content: "\e908";}.azsrugby-play:before { content: "\e909";}.azsrugby-connection:before { content: "\e90a";}.azsrugby-price-tags:before { content: "\e90b";}.azsrugby-barcode:before { content: "\e90c";}.azsrugby-qrcode:before { content: "\e90d";}.azsrugby-cart:before { content: "\e90e";}.azsrugby-location:before { content: "\e90f";}.azsrugby-bubble:before { content: "\e910"; float: right; font-size: 14px;margin-top: 3px;margin-right: 3px;}.azsrugby-user:before { content: "\e911";}.azsrugby-quotes-right:before { content: "\e912";}.azsrugby-spinner:before { content: "\e913";}.azsrugby-search:before { content: "\e914"; font-size: 25px;}.azsrugby-cog:before { content: "\e915";}.azsrugby-blocked:before { content: "\e916";}.azsrugby-cross:before { content: "\e917";}.azsrugby-checkmark:before { content: "\e918";}.azsrugby-embed2:before { content: "\e919";}.azsrugby-share2:before { content: "\e91a";}.azsrugby-mail2:before { content: "\e91b";}.azsrugby-google-plus:before { content: "\e91c";}.azsrugby-facebook:before { content: "\e91d"; font-size:20px; padding: 5px;}.azsrugby-facebook2:before { content: "\e91e";}.azsrugby-instagram:before { content: "\e91f"; font-size:24px; padding: 5px;}.azsrugby-twitter:before { content: "\e920"; font-size:20px; padding: 5px;}.azsrugby-rss:before { content: "\e921";}.azsrugby-youtube2:before { content: "\e922"; font-size: 22px; padding: 5px;}.azsrugby-vimeo:before { content: "\e923";}
+.azsrugby-icon {font-family: 'azsrugby-icon' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}.azsrugby-a1:before { content: "\e900";}.azsrugby-a2:before { content: "\e901";}.azsrugby-like:before { content: "\e902";}.azsrugby-logo-m:before { content: "\e903"; font-size: 60px;}.azsrugby-mm:before { content: "\e904"; font-size: 25px}.azsrugby-home3:before { content: "\e905";}.azsrugby-pencil2:before { content: "\e906";}.azsrugby-images:before { content: "\e907";}.azsrugby-headphones:before { content: "\e908";}.azsrugby-play:before { content: "\e909";}.azsrugby-connection:before { content: "\e90a";}.azsrugby-price-tags:before { content: "\e90b";}.azsrugby-barcode:before { content: "\e90c";}.azsrugby-qrcode:before { content: "\e90d";}.azsrugby-cart:before { content: "\e90e";}.azsrugby-location:before { content: "\e90f";}.azsrugby-bubble:before { content: "\e910"; float: right; font-size: 14px;margin-top: 3px;margin-right: 3px;}.azsrugby-user:before { content: "\e911";}.azsrugby-quotes-right:before { content: "\e912";}.azsrugby-spinner:before { content: "\e913";}.azsrugby-search:before { content: "\e914"; font-size: 25px; color:#fff;}.azsrugby-cog:before { content: "\e915";}.azsrugby-blocked:before { content: "\e916";}.azsrugby-cross:before { content: "\e917";}.azsrugby-checkmark:before { content: "\e918";}.azsrugby-embed2:before { content: "\e919";}.azsrugby-share2:before { content: "\e91a";}.azsrugby-mail2:before { content: "\e91b";}.azsrugby-google-plus:before { content: "\e91c";}.azsrugby-facebook:before { content: "\e91d"; font-size:20px; padding: 5px;}.azsrugby-facebook2:before { content: "\e91e";}.azsrugby-instagram:before { content: "\e91f"; font-size:24px; padding: 5px;}.azsrugby-twitter:before { content: "\e920"; font-size:20px; padding: 5px;}.azsrugby-rss:before { content: "\e921";}.azsrugby-youtube2:before { content: "\e922"; font-size: 22px; padding: 5px;}.azsrugby-vimeo:before { content: "\e923";}
 /*
     GENERAL
     -------------------------------------------------------------
@@ -33,20 +33,20 @@
 body{font-family: 'Bree Serif', 'Helvetica Neue', 'Helvetica', Arial, Verdana, serif;}
 .table{display: table; /*width: auto;*/ height: 100%; margin-bottom: 0;}
 .table-cell{display: table-cell; width: 100%; height: 100%; vertical-align: middle;}
-.page-container{position: relative;z-index: 6;color: #fff;margin-top: 120px;padding-left: 0;padding-right: 0;}
-.page-title{ border-radius: 10px;border: 2px dotted #fff;display: inline-block;position: relative;left: 50%;transform: translateX(-50%);padding-left: 10px;padding-right: 10px;
-    margin-top: 35px;}
+.page-container{position: relative;z-index: 6;color: #fff;margin-top: -60px;padding-left: 0;padding-right: 0;}
+.page-title{padding: 10px 10px 10px 10px;position: relative;color: #FFF;display: block;background-color: #37465d; text-align: center;}
 .page-title h2 {margin: 0; position: relative; top: -2px;}
-.page-content{width: 80%;background-color: #fff;color: #000; padding: 20px;margin-bottom: 35px;margin-top: 25px; display: block; margin-left: auto; margin-right: auto;
-    border-radius: 25px;}
-.page-img{width: 100%;height: 40vh;overflow: hidden; position: absolute;top: 0;z-index: -1; }
-.page-img img{width: 100%; height: auto;}
+.page-content{width: 80%;background-color: #fff;color: #000;padding: 20px;margin-bottom: 35px;margin-top: 25px;display: block;margin-left: auto;margin-right: auto;
+    border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.page-content p a img{width: 100%;height: auto;}
+.page-img{    width: 100%; height: 200px;overflow: hidden;}
+.page-img img{width: 100%;position: relative; height: auto; top: 50%;transform: translateY(-50%);}
 
 /*
     HEADER TOP LOGO SOCIAL
     -------------------------------------------------------------
 */
-.top{background-color:#006738; color:#fff; padding-left: 0; padding-right: 0; z-index: 99; position: relative;  }
+.top{background-color:#006738; color:#fff; padding-left: 0; padding-right: 0; z-index: 99;position: fixed;width: 100%; top: 0; }
 .top a:visited,
 .top a:link{color:#fff; text-decoration: none;}
 .header-content{height: 63px; padding-left: 0; padding-right: 0;}
@@ -63,7 +63,7 @@ body{font-family: 'Bree Serif', 'Helvetica Neue', 'Helvetica', Arial, Verdana, s
     HEADER LOGO
     -------------------------------------------------------------
 */
-.main-nav-container{height: 150px;position: relative;z-index: 6; padding: 0;text-align: center;}
+.main-nav-container{height: 150px;position: relative;z-index: 6; padding: 0;text-align: center;margin-top:60px;}
 .logo{width: 150px; height:158px; position: absolute;top: 12px;z-index: -1; background-color: #fff;}
 .logo a{width: 120px;display: block;}
 .logo-img{width: 120px;}
@@ -129,6 +129,20 @@ body{font-family: 'Bree Serif', 'Helvetica Neue', 'Helvetica', Arial, Verdana, s
 .is-clicked{background-color: rgba(255, 255, 255, 0);}
 .is-clicked:before{ top: 0;-webkit-transform: rotate(135deg);-moz-transform: rotate(135deg);-ms-transform: rotate(135deg);-o-transform: rotate(135deg);transform: rotate(135deg);}
 .is-clicked:after{ top: 0;-webkit-transform: rotate(225deg);-moz-transform: rotate(225deg);-ms-transform: rotate(225deg);-o-transform: rotate(225deg);transform: rotate(225deg);}
+.mm-fb,
+.mm-yt,
+.mm-inst,
+.mm-twit{display: inline-block;}
+.mm-fb a,
+.mm-yt a,
+.mm-inst a,
+.mm-twit a,
+.mm-szukaj a{overflow: hidden;text-indent: -9999px;background-repeat: no-repeat;background-position: center center;background-size: contain;height: 40px;}
+.mm-fb a{ background-image: url(../img/mm_fb.svg);}
+.mm-yt a{ background-image: url(../img/mm_yt.svg);}
+.mm-inst a{ background-image: url(../img/mm_inst.svg);}
+.mm-twit a{ background-image: url(../img/mm_twit.svg);}
+.mm-szukaj a{background-image: url(../img/search.svg);}
 /*
     SLIDER
     -------------------------------------------------------------
@@ -222,7 +236,7 @@ body{font-family: 'Bree Serif', 'Helvetica Neue', 'Helvetica', Arial, Verdana, s
     SUPPORT
     -------------------------------------------------------------
 */
-.support-container{background-color: #eee;text-align: center; padding: 0;}
+.support-container{background-color: #eee;text-align: center; padding: 0; overflow: hidden;}
 .support-title{display: inline-block;}
 .support-title h2{font-size: 24px; color:#8a8a8a; text-transform: uppercase;}
 .support-content{text-align: center;    margin-bottom: 25px;}
@@ -237,9 +251,9 @@ body{font-family: 'Bree Serif', 'Helvetica Neue', 'Helvetica', Arial, Verdana, s
     /*
     CONTACT FORM - PAGE
     */
-.page-contact{background-color: #37465d;position: relative;z-index: 6;color: #fff;margin-top: 120px;}
+.page-contact{background-color: #37465d;position: relative;z-index: 6;color: #fff;margin-top: -25px;}
 .page-contact-title{border-radius: 10px;border: 2px dotted #fff;display: inline-block;position: relative;left: 50%;transform: translateX(-50%);
-    padding-left: 10px;padding-right: 10px; margin-top: 20px;}
+    padding-left: 10px;padding-right: 10px; margin-top: 20px; color: #fff;}
 .page-contact-title h2 {margin: 0; position: relative; top: -2px;}
 .contact-form{width: 33%;position: relative;display: inline-block;left: 50%;transform: translateX(-50%); margin-top: 20px;margin-bottom: 20px;}
 .button-contact{width: 50%;border-radius: 25px; background-color: transparent;border: 1px dotted #fff;position: relative;left: 50%;transform: translateX(-50%);}
@@ -266,13 +280,22 @@ body{font-family: 'Bree Serif', 'Helvetica Neue', 'Helvetica', Arial, Verdana, s
 form span{color: red;}
 /*
 
+POST
+*/
+.post{position: relative;margin-top: 35px;}
+.post-blog{position: relative;color: #000; margin-top: 35px;}
+.post-info{position: relative;text-align: center; margin-top: 50px;}
+.single-post-img{position: relative; width: 100%; height: 200px; overflow: hidden;}
+.single-post-img img{position: relative;width: 100%;height: auto;top: 50%;transform: translateY(-50%);}
+/*
+
 PAGE mobile-menu
 */
-.manin-menu-page{position: absolute;padding: 0;text-align: center;margin-bottom: 10px; margin-top: 10px;z-index: 7;left: 50%;transform: translateX(-50%);}
+.manin-menu-page{position: relative;padding: 0;text-align: center;margin-top: 70px;z-index: 7;}
 .manin-menu-page-logo{position: relative;display: inline-block;background-color: #fff;border-radius: 15px;padding-bottom: 6px;padding-left: 6px;}
 .manin-menu-page-logo a{display: block}
 .manin-menu-page-logo a img {width: 120px;}
-.main-menu-page-nav{position: relative; display: inline-block;margin: 0;    vertical-align: middle;}
+.main-menu-page-nav{position: relative;display: inline-block; margin-bottom: 30px;}
 .main-menu-page-nav ul li a {text-transform: uppercase;color: #006738;font-size: 24px;font-weight: bold;padding: 12px;background: none;}
 .main-menu-page-nav ul li a:hover{ background:#006738; color: #fff;}
 .main-menu-page-nav ul li a:focus{ background:#006738; color: #fff;}
@@ -292,15 +315,96 @@ PAGE mobile-menu
 .podpis p{margin-bottom: 0; font-size: 12px;}
 #footer-mail{font-size: 16px;text-transform: none;}
 #map-container{height:250px;}
+/*
+  COOKIE
+  ----------------------------------------------------------------------
+*/
+.cookie{position: fixed;width: 100%;height: auto;background-color: #37465D;color: #fff;text-align: center;bottom: 0;z-index: 8; display: none;}
+.cookie-p{margin: 10px;display: inline-block;position: relative;bottom: 8px;}
+.cookie-button{border-radius: 10px;border: 1px dashed;cursor: pointer; padding-left: 10px; padding-right: 10px;padding-bottom: 2px;position: relative;bottom: 8px;}
+.cookie-img{width: 40px;height: 40px;position: relative;top: 5px;background-image: url(../img/two.svg);background-repeat: no-repeat;background-position: center center;background-size: cover; display: inline-block;}
 
-@media (max-width: 992px){
-
-    .contact-form{width: 60%;}
-    .error,.success{max-width: 60%;}
-
-}
-@media (max-width: 578px){
-
+@media (max-width: 577px){
+    .azsrugby-twitter:before {font-size: 16px;}
+    .azsrugby-facebook:before {font-size: 16px;}
+    .azsrugby-logo-m:before {font-size: 50px;}
     .promotion-movie{width: auto;display: block; }
+    .site-title-sample {display: none;}
+    .header-search-container {display: none;}
+    .navbar-azsrugby {display: none;}
+    .slider-container {height: 280px;margin-top: -178px;}
+    .logo {width: 30px;height: 35px;}
+    .slider-frame-title {width: 66%; top: 40px;}
+    .slider-button { top: 45px;}
+    .makeup{height: 77px;width: 100%; margin-top: -45px;position: relative;z-index: -2;transform: rotate(-5deg);background-color: #fff;}
+    .logo-img { display: none;}
+    .header-social-container {display: none;}
+    .slider-button { display: none;}
+    .slider-text {width: 66%;top: -10px;}
+    .main-menu-page-nav{display: none}
+    .promotion-movie{width: auto;display: block; }
+}
+@media (min-width: 578px){
 
+
+    .site-title-sample {display: none;}
+    .header-search-container {display: none;}
+    .navbar-azsrugby {display: none;}
+    .slider-container {height: 440px; margin-top: -150px;}
+    .logo {width: 60px;height: 72px;}
+    .slider-frame-title { top: 60px;}
+    .slider-button { top: 45px;}
+    .makeup{height: 77px;width: 100%; margin-top: -14px;position: relative;z-index: -2;transform: rotate(-5deg);background-color: #fff;}
+    .logo-img { display: none;}
+    .azsrugby-youtube2:before {font-size: 20px;padding: 0;}
+    .azsrugby-instagram:before {font-size: 20px;padding: 0;}
+    .azsrugby-facebook:before { padding: 0;}
+    .azsrugby-twitter:before {padding: 0;}
+    .main-menu-page-nav{display: none}
+}
+@media (min-width: 768px)
+{
+  .site-title-sample {display: none;}
+  .header-search-container {display: none;}
+  .navbar-azsrugby {display: none;}
+  .slider-container {height: 440px; margin-top: -150px;}
+  .logo {width: 140px;height: 73px;}
+  .slider-frame-title { top: 60px;}
+  .slider-button { top: 45px;}
+  .makeup{height: 70px;width: 100%; position: relative;z-index: -2;transform: rotate(-5deg);background-color: #fff;margin-top: -10px;}
+  .logo-img { display: none;}
+  .azsrugby-youtube2:before {font-size: 22px;padding: 5px;}
+  .azsrugby-instagram:before {font-size: 22px;padding: 5px;}
+  .azsrugby-facebook:before { padding: 5px;}
+  .azsrugby-twitter:before {padding: 5px;}
+  .main-menu-page-nav{display: none}
+}
+@media (min-width: 992px){
+  .site-title-sample {display: inline-block;}
+  .header-search-container {display: table; }
+  .navbar-azsrugby {display: inline-block;}
+  .logo {width: 145px;height: 149px;}
+  .navbar-azsrugby {left: 50px;}
+  .navbar-azsrugby li a {font-size: 22px;}
+  .slider-container {height: 440px; margin-top: -84px;}
+  .slider-frame-title { top: 60px;}
+  .slider-button { top: 55px;}
+  .makeup{display: none;}
+  .logo-img { display: block;}
+  .main-menu-page-nav{display: none}
+  }
+@media (min-width: 1200px)
+{
+  .site-title-sample {display: inline-block;}
+  .header-search-container {display: table; }
+  .navbar-azsrugby {display: inline-block;}
+  .logo {width: 150px; height: 158px;}
+  .navbar-azsrugby{left: 0;}
+  .navbar-azsrugby li a {font-size: 24px;}
+  .slider-container {height: 540px;margin-top: -84px;}
+  .slider-frame-title { top: 75px;}
+  .slider-button { top: 55px;}
+  .makeup{display: none;}
+  .logo-img { display: block;}
+  .main-menu-page-nav{display: inline-block;}
 }

@@ -40,7 +40,7 @@
                                         <span class="azsrugby-instagram"></span></a></div>
                                 <div class="header-social-content azsrugby-icon"><h2 class="hide">Youtube</h2>
                                     <a href="https://www.youtube.com/" title="Youtube">
-                                        <span class="azsrugby-youtube2"></span></a></div>
+                                        <span class="azsrugby-youtube2 azsrugby-play"></span></a></div>
                                 <?php }else{?>
                                 <div class="header-social-content azsrugby-icon"><h2 class="hide">Instagram</h2>
                                     <a href="https://www.instagram.com/<?php print esc_attr(get_option('instagram_handler')); ?>" title="Instagram">
@@ -118,7 +118,7 @@
                 </div><!--row-->
                 <div class="row">
                     <div class="col-xs-12 search-container">
-                        <form method="get"  action="#">
+                        <form method="get"  action="http://azsrugby.zut.edu.pl/">
                            <fieldset>
                                 <input type="search" class="search-input animate" id="searchtext"  name="s" placeholder="Szukaj">
                                 <button type="submit" class="search-button azsrugby-icon"><span class="azsrugby-search"></span></button>
@@ -142,6 +142,7 @@
                                     'container' => false,
                                     'menu_class' => 'mobile-menu'
                                  ));
+
                             ?>
                     </nav>
                 </div>

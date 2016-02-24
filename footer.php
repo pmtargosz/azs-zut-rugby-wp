@@ -13,6 +13,7 @@
     ?>
 
 <footer class="container footer-container">
+
     <div id="map-container"></div>
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"> </script>
     <div class="footer-logo"><img src="<?php echo esc_attr(get_option('footer_img')); ?>" /></div>
@@ -28,5 +29,9 @@
 </footer>
 
 <?php wp_footer(); ?>
+<div class="cookie">
+  <span class="cookie-img"></span>
+  <p class="cookie-p"> Witamy! Nasz serwis używa cookies - bez obaw ;)</p><span class="cookie-button" id="cookie-ok">Akceptuje</span>
+</div>
 </body>
 </html>

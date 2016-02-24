@@ -1,33 +1,32 @@
 jQuery(document).ready( function($){
 
-    var mediaUploader;
-    //header
-    $('#upload-button').on('click',function(e) {
-       e.preventDefault();
-        if( mediaUploader ){
-            mediaUploader.open();
-            return;
-        }
+    var mediaUploaders;
 
-        mediaUploader = wp.media.frames.file_frame = wp.media({
-            title: 'Wybierz grafike twojego logotypu',
-            button: {
-                text: 'Wybierz logo'
-            },
-            multiple: false
+        $('#upload-button').on('click',function(e) {
+            e.preventDefault();
+                    if( mediaUploaders ){
+                        mediaUploaders.open();
+                        return;
+                    }
+
+                mediaUploaders = wp.media.frames.file_frame = wp.media({
+                  title: 'Wybierz grafike twojego logotypu',
+                  button: {
+                      text: 'Wybierz logo'
+                    },
+                    multiple: false
+                });
+
+                mediaUploaders.on('select', function(){
+                    attachment = mediaUploaders.state().get('selection').first().toJSON();
+                    $('#logo-picture').val(attachment.url);
+                    /*$('#logo-picture-preview').css('background-image', 'url(' + attachment.url + ')');*/
+                    $('#logo-picture-preview').attr('src', attachment.url);
+                });
+
+            mediaUploaders.open();
+
         });
-
-        mediaUploader.on('select', function(){
-            attachment = mediaUploader.state().get('selection').first().toJSON();
-            $('#logo-picture').val(attachment.url);
-            /*$('#logo-picture-preview').css('background-image', 'url(' + attachment.url + ')');*/
-            $('#logo-picture-preview').attr('src', attachment.url);
-
-        });
-
-        mediaUploader.open();
-
-    });
 
     $('#remove-picture').on('click', function(e){
        e.preventDefault();
@@ -104,15 +103,15 @@ var mediaUploader = [];
 
     //promotion
     //
-
+var mediaUploaderp;
 $('#upload-button-img').on('click',function(e) {
        e.preventDefault();
-        if( mediaUploader ){
-            mediaUploader.open();
+        if( mediaUploaderp ){
+            mediaUploaderp.open();
             return;
         }
 
-        mediaUploader = wp.media.frames.file_frame = wp.media({
+        mediaUploaderp = wp.media.frames.file_frame = wp.media({
             title: 'Wybierz grafike promocyjną',
             button: {
                 text: 'Wybierz grafikę'
@@ -120,15 +119,15 @@ $('#upload-button-img').on('click',function(e) {
             multiple: false
         });
 
-        mediaUploader.on('select', function(){
-            attachment = mediaUploader.state().get('selection').first().toJSON();
+        mediaUploaderp.on('select', function(){
+            attachment = mediaUploaderp.state().get('selection').first().toJSON();
             $('#promotion-img').val(attachment.url);
             /*$('#logo-picture-preview').css('background-image', 'url(' + attachment.url + ')');*/
             $('#promotion-img-preview').attr('src', attachment.url);
 
         });
 
-        mediaUploader.open();
+        mediaUploaderp.open();
 
     });
 
@@ -249,15 +248,15 @@ var mediaUploader = [];
     ///
     ///
     ///
-
+var mediaUploaderf
     $('#upload-button-footer-img').on('click',function(e) {
        e.preventDefault();
-        if( mediaUploader ){
-            mediaUploader.open();
+        if( mediaUploaderf ){
+            mediaUploaderf.open();
             return;
         }
 
-        mediaUploader = wp.media.frames.file_frame = wp.media({
+        mediaUploaderf = wp.media.frames.file_frame = wp.media({
             title: 'Wybierz grafike ',
             button: {
                 text: 'Wybierz grafikę'
@@ -265,15 +264,15 @@ var mediaUploader = [];
             multiple: false
         });
 
-        mediaUploader.on('select', function(){
-            attachment = mediaUploader.state().get('selection').first().toJSON();
+        mediaUploaderf.on('select', function(){
+            attachment = mediaUploaderf.state().get('selection').first().toJSON();
             $('#footer-img').val(attachment.url);
             /*$('#logo-picture-preview').css('background-image', 'url(' + attachment.url + ')');*/
             $('#footer-img-preview').attr('src', attachment.url);
 
         });
 
-        mediaUploader.open();
+        mediaUploaderf.open();
 
     });
 
